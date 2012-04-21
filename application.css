@@ -79,6 +79,10 @@ nav a:active {
       box-shadow: inset 0 0 12px rgba(0,0,0, 0.765);
 }
 
+#about, #study {
+  margin-bottom: 50px;
+}
+
 
 #links ul li a img {
   width: 64px;
