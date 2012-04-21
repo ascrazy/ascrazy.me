@@ -68,5 +68,9 @@ nav a:active {
 }
 
 p {
-  font-size: 137%;
+  font-size: 137%;  
+}
+
+h1, h2, h3, h4 {
+  color: rgb(80,80,80);
 }
