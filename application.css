@@ -6,12 +6,13 @@ nav {
 nav li {
   float: left;
   list-style: none;
-  margin-left: 12px;
+  margin-left: 2px;
+  margin-top: 9px;
 }
 
 nav a, nav a {
-  display: block;
-  padding: 11px 15px;
+  display: block;  
+  padding: 7px 8px;
   border: 1px solid rgb(195,195,195);
   color: rgb(80,80,80);
   -webkit-tap-highlight-color: rgba(0,0,0, 0);
