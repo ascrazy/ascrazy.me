@@ -1,0 +1,72 @@
+nav {
+  position: absolute;
+  right: 0px; top: 8px;
+}
+
+nav li {
+  float: left;
+  list-style: none;
+  margin-left: 12px;
+}
+
+nav a, nav a {
+  display: block;
+  padding: 11px 15px;
+  border: 1px solid rgb(195,195,195);
+  color: rgb(80,80,80);
+  -webkit-tap-highlight-color: rgba(0,0,0, 0);
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0, 0.05);
+     -moz-box-shadow: inset 0 0 5px rgba(0,0,0, 0.05);
+      box-shadow: inset 0 0 5px rgba(0,0,0, 0.05);
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+      border-radius: 3px;
+  -webkit-transition: all 0.123s ease-out;
+     -moz-transition: all 0.123s ease-out;  
+      transition: all 0.123s ease-out;
+}
+
+nav a:hover, nav a:active {
+  text-decoration: none;
+  border-color: rgb(60,60,60);
+  color: rgb(50,50,50);
+  -webkit-box-shadow: inset 0 0 8px rgba(0,0,0, 0.38);
+     -moz-box-shadow: inset 0 0 8px rgba(0,0,0, 0.38);
+      box-shadow: inset 0 0 8px rgba(0,0,0, 0.38);
+}
+
+nav a:active {
+  background: rgb(90,90,90);
+  border-color: rgb(60,60,60);
+  color: rgb(245,245,245);
+  text-shadow: 0 -1px 0 rgba(0,0,0, 0.9);
+  -webkit-box-shadow: inset 0 0 12px rgba(0,0,0, 0.765);
+     -moz-box-shadow: inset 0 0 12px rgba(0,0,0, 0.765);
+      box-shadow: inset 0 0 12px rgba(0,0,0, 0.765);
+}
+
+/*#links ul li {
+  text-align: center;
+}
+*/
+#links ul li a img {
+  width: 64px;
+  height: 64px;
+}
+
+@media only screen and (max-width: 767px) {
+  .block-grid.tablet { display: block ; overflow: hidden ; }
+  .block-grid.tablet>li { display: block ; height: auto ; float: left ; }
+
+  .block-grid.three-up.tablet, .block-grid.tablet.four-up, .block-five.four-up.tablet { margin-left: -4% }
+  .block-grid.three-up.tablet>li, .block-grid.tablet.four-up>li, .block-grid.five-up.tablet>li { margin-left: 4%; width: 46%; margin-bottom: 4%;}
+}
+
+@media only screen and (max-width: 480px) {
+  .block-grid.mobile { margin-left: 0 ; }
+  .block-grid.mobile > li { float: none ; width: 100% ; margin-left: 0 ; }
+}
+
+p {
+  font-size: 137%;
+}
