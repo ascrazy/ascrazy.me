@@ -44,7 +44,7 @@ nav ul li:first-child a {
     border-bottom-left-radius: 3px; }
 nav ul li:last-child a {
     -webkit-border-top-right-radius: 3px;
-    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
     -moz-border-top-right-radius: 3px;
     -moz-border-bottom-right-radius: 3px;
     border-top-right-radius: 3px;
@@ -85,3 +85,10 @@ header#mobile-head {display: none;}
   #links ul li a img { width: 32px; height: 32px; } }
 
 footer p { font-size: 100%; }
+
+.corner { position: absolute; top: 0px; right: 1px; }
+body > .container { padding-top: 15px; }
+.button.radius-bottom-left {
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px; }
