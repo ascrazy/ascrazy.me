@@ -1,0 +1,10 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    cssmin (1.0.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  cssmin
