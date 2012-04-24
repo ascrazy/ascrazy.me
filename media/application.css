@@ -13,7 +13,7 @@ p { font-size: 137%; }
 @media only screen and (max-width: 480px) { p { font-size: 97%; } }
 
 h1, h2, h3, h4 { color: rgb(80,80,80); }
-b { color: rgb(0,0,0); }
+b { color: rgb(215,215,215); }
 
 nav {
   position: absolute;
