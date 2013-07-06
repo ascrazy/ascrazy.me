@@ -1,15 +1,15 @@
 /* TEAM */
   Developer: Alexander Shakhorsky aka ascrazy
-  Contact: alexander [at] ascrazy.me
+  Contact: alexander@ascrazy.me
   Twitter: @as_crazy
   From: Minsk, Belarus
 
 /* THANKS */
-  - 
+  -
 
 /* SITE */
 
   Last update: 2013/18/05
   Language: English / Russian
   Doctype: HTML5
-  IDE: Sublime Text, GIMP
+  IDE: Sublime Text, GIMP, Git
