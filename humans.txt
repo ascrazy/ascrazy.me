@@ -4,12 +4,8 @@
   Twitter: @as_crazy
   From: Minsk, Belarus
 
-/* THANKS */
-  -
-
 /* SITE */
-
   Last update: 2013/18/05
   Language: English / Russian
   Doctype: HTML5
-  IDE: Sublime Text, GIMP, Git
+  IDE: Ubuntu <3, Sublime Text, GIMP, Git
