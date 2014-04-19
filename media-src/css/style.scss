@@ -72,8 +72,19 @@ header#main-header, footer {
     }
   }
 }
-footer nav li a {
-  padding-left: 0;
+footer nav li {
+  a {
+    padding-left: 0;
+  }
+  @media (min-width: 768px) {
+    width: auto;
+    box-sizing: content-box;
+    a {
+      box-sizing: border-box;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+  }
 }
 
 main {

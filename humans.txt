@@ -5,7 +5,7 @@
   From: Minsk, Belarus
 
 /* SITE */
-  Last update: 2013/18/05
+  Last update: 2014/04/19
   Language: English / Russian
   Doctype: HTML5
-  IDE: Ubuntu <3, Sublime Text, GIMP, Git
+  IDE: Ubuntu <3, Sublime Text, Inkscape, Git

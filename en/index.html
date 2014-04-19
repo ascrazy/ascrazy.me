@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width" />
@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="/media/favicon.ico" />
     <link rel="author" href="/humans.txt" />
     <meta name="description" content="Alexander Shahorsky's homepage." />
-    <meta name="keywords" content="ascrazy,Alexandr Shahorsky" />
+    <meta name="keywords" content="ascrazy,Alexandr Shahorsky,rails,Ruby on Rails" />
     <!-- OpenGraph -->
     <meta name="og:title" content="Alexander Shahorsky" />
     <meta name="og:type" content="website" />
@@ -17,95 +17,183 @@
     <meta name="og:image:height" content="600" />
     <meta name="og:description" content="Alexander Shahorsky's homepage." />
     <!---->
-    <link rel="stylesheet" href="../media/foundation.min.css" type="text/css">
-    <link rel="stylesheet" href="../media/application.min.css" type="text/css">
+    <link rel="stylesheet" href="/media/css/normalize.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/media/css/reset.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/media/css/layout.screen.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/media/css/layout.print.css" type="text/css" media="print">
+    <link rel="stylesheet" href="/media/css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/media/css/style-fixes.print.css" type="text/css" media="print">
+    <script type="text/javascript" src="/media/js/app.js"></script>
   </head>
-
   <body>
-    <div class="container">
-      <header class="row" id="tablet-head">
-        <div class="seven columns">
-          <h1>Alexander Shahorsky</h1>
-        </div>
-        <nav class="five columns">
-          <ul>
-            <li><a href="#about">I'm</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#study">Study</a></li>
-            <li><a href="#links">Links</a></li>
-            <li><a href="mailto:alexander@ascrazy.me" target="_blank">Contact</a></li>
-            <li><a href="../downloads/curriculum_vitae.en.pdf">Curriculum Vitae</a></li>
-          </ul>
-        </nav>
-      </header>
-      <header class="row" id="mobile-head">
-        <div class="twelve columns">
-          <h1>Alexander Shahorsky</h1>
-        </div>
-        <nav class="twelve columns">
-          <ul>
-            <li><a href="#about">I'm</a></li>
-            <li><a href="mailto:alexander@ascrazy.me" target="_blank">Contact</a></li>
-            <li><a href="../downloads/curriculum_vitae.en.pdf">Curriculum Vitae</a></li>
-          </ul>
-        </nav>
-        <nav class="twelve columns">
-          <ul>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#study">Study</a></li>
-            <li><a href="#links">Links</a></li>
-          </ul>
-        </nav>
-      </header>
-
+    <header id="main-header">
+      <nav>
+        <li><a title="Alexander Shahorsky" href="#about">I am</a></li>
+        <li><a title="Work" href="#work">Work</a></li>
+        <li><a title="Study" href="#study">Study</a></li>
+        <li><a title="Contacts" href="#contacts">Contacts</a></li>
+        <li><a title="CV" href="downloads/curriculum_vitae.pdf" target="_blank">CV</a></li>
+        <li><a title="Русский" href="/">Русский</a></li>
+      </nav>
+    </header>
+    <main>
       <section id="about">
-        <header class="row"><h2>I'm</h2></header>
-        <div class="row">
+        <header>
+          <h1>Alexander Shahorsky</h1>
+        </header>
+        <article>
           <p>Hi, my name is Alexander, and this page is about me.</p>
-          <p>I was born in the 1990th year near the city of Vitebsk, Belarus. There's also graduated from high school, then went to study at <a href="http://www.bsu.by/en/" title="university">University</a>.</p>
-          <p>In 2013, I graduated from university, and now I work a web developer at <a href="http://itransition.com" title="evil corp.">Itransition</a>.</p>
-        </div>
+          <p>I was born in the 1990th year near the city of Vitebsk, Belarus. There's also graduated from high school, then went to study at <a href="http://www.bsu.by/en/" title="University" target="_blank">University</a>.</p>
+          <p>In 2013, I graduated from university, and now I work a web developer at <a href="http://itransition.com" title="Evil corp." target="_blank">Itransition</a>.</p>
+        </article>
+      </section>
+      <section id="general">
+        <header>
+          <h1>Alexander Shahorsky</h1>
+        </header>
+        <ul>
+          <li>
+            <a class="tel" title="Phone" href="tel:+375336461782" target="_blank">+375-33-6461782</a>
+          </li>
+          <li>
+            <a class="email" title="Email" href="mailto:alexandr@ascrazy.me" target="_blank">alexandr@ascrazy.me</a>
+          </li>
+          <li>
+            <a class="web" title="Web" href="http://ascrazy.me" target="_blank">ascrazy.me</a>
+          </li>
+          <li>
+            <a class="github" title="Github" href="https://github.com/ascrazy" target="_blank">github.com/ascrazy</a>
+          </li>
+          <li>
+            <a class="linkedin" title="LinkedIn" href="http://www.linkedin.com/in/ascrazy" target="_blank">linkedin.com/in/<b>ascrazy</b></a>
+          </li>
+        </ul>
+      </section>
+      <section id="skills">
+        <header>
+          <h2>Skills</h2>
+        </header>
+        <ul>
+          <li>
+            <p class="group">Ruby</p>
+            <ul class="skill-list">
+              <li>Ruby on Rails</li>
+              <li>Sinatra</li>
+              <li>Rack</li>
+              <li>Rspec</li>
+              <li>Capistrano</li>
+            </ul>
+          </li>
+          <li>
+            <p class="group">JavaScript</p>
+            <ul class="skill-list">
+              <li>jQuery</li>
+              <li>Backbone.js</li>
+              <li>Coffescript</li>
+            </ul>
+          </li>
+          <li>
+            <p class="group">Databases</p>
+            <ul class="skill-list">
+              <li>MySQL</li>
+              <li>PostgreSQL</li>
+              <li>SQLite</li>
+              <li>MongoDB</li>
+              <li>Redis</li>
+            </ul>
+          </li>
+        </ul>
       </section>
       <section id="work">
-        <header class="row"><h2>Work</h2></header>
-        <div class="row">
-          <ul class="block-grid two-up mobile">
-            <li>
-              <h4>Now</h4>
-              <p>Web-developer at <a href="http://itransition.com">Itransition</a>.</p>
-            </li>
-            <li>
-              <h4>Previous</h4>
-              <ul>
-                <li><p>System Administrator at <a href="http://bam-boo.mobi/">Bamboo group</a>.</p></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+        <header>
+          <h2>Work</h2>
+        </header>
+        <ul>
+          <li class="now">
+            <p class="period">
+              <time datetime="2011-09-20">09.2011</time> &#8211; <time>now</time>
+            </p>
+            <p class="title">
+              Web-developer at <a title="Itran" href="http://itransition.com" target="_blank">Itransition</a>.
+            </p>
+            <p class="description">
+              Web-applications and sites development using Ruby on Rails, PostgreSQL, JavaScript and other web technologies.
+            </p>
+          </li>
+          <li>
+            <p class="period">
+              <time datetime="2011-02-01">02.2011</time> &#8211; <time datetime="2011-08-20">08.2011</time>
+            </p>
+            <p class="title">
+              System Administrator at <a title="Bamboo" href="http://bam-boo.mobi/" target="_blank">Bamboo group</a>.
+            </p>
+            <p class="description">
+              Web-applications and sites development using Ruby on Rails, PostgreSQL, JavaScript and other web technologies
+            </p>
+          </li>
+        </ul>
       </section>
       <section id="study">
-        <header class="row"><h2>Study</h2></header>
-        <div class="row">
-          <ul class="grid-block two-up mobile">
-            <li><p>2008&mdash;2013, <a href="http://www.bsu.by/en/" title="university">Belorussian State University</a>, Faculty of Mathematics and Mechanics.</p></li>
-          </ul>
-        </div>
+        <header>
+          <h2>Study</h2>
+        </header>
+        <ul>
+          <li>
+            <p class="period">
+              <time datetime="2008-09-01">2008</time> &#8211; <time datetime="2013-06-30">2013</time>
+            </p>
+            <p class="title">
+              <a href="http://www.bsu.by/en/" title="University" target="_blank">Belorussian State University</a>, <a href="http://www.mmf.bsu.by/english" title="MMF" target="_blank">Faculty of Mathematics and Mechanics</a>.
+            </p>
+            <p class="description">
+              Mathematician. Teacher of mathematics and informatics. ISCED2011 Level 6.
+            </p>
+          </li>
+        </ul>
       </section>
-      <section id="links">
-        <header class="row"><h2>Links</h2></header>
-        <div class="row">
-          <ul class="block-grid four-up mobile tablet">
-            <li><a class="github" href="https://github.com/ascrazy"><img src="../media/images/github.svg" alt="github"  /></a></li>
-            <li><a class="linkedin" href="http://www.linkedin.com/pub/alexander-Shahorsky/27/3ba/233"><img src="../media/images/linkedin.svg" alt="linkedin" /></a></li>
-            <li><a class="facebook" href="https://facebook.com/ascrazy"><img src="../media/images/facebook.svg" alt="facebook" /></a></li>
-            <li><a class="google-plus" href="https://plus.google.com/u/0/103981297072720691156"><img src="../media/images/google-plus.svg" alt="google-plus" /></a></li>
-            <li><a class="email" href="mailto:alexandr@ascrazy.me"><img src="../media/images/email.svg" alt="email" /></a></li>
-            <li><a class="jabber" href="xmpp:ascrazy@jabber.ru"><img src="../media/images/jabber.svg" alt="jabber" /></a></li>
-          </ul>
-        </div>
+      <section id="contacts">
+        <header>
+          <h2>Contacts</h2>
+        </header>
+        <ul>
+          <li>
+            <a class="github" title="Github" href="https://github.com/ascrazy" target="_blank">
+              github.com/<b>ascrazy</b>
+            </a>
+          </li>
+          <li>
+            <a class="linkedin" title="LinkedIn" href="http://www.linkedin.com/in/ascrazy" target="_blank">
+              linkedin.com/in/<b>ascrazy</b>
+            </a>
+          </li>
+          <li>
+            <a class="facebook" title="Facebook" href="https://facebook.com/ascrazy" target="_blank">
+              facebook.com/<b>ascrazy</b>
+            </a>
+          </li>
+          <li>
+            <a class="email" title="Email" href="mailto:alexandr@ascrazy.me" target="_blank">
+              <b>alexandr@ascrazy.me</b>
+            </a>
+          </li>
+          <li>
+            <a class="xmpp" title="XMPP" href="xmpp:ascrazy@jabber.ru" target="_blank">
+              <b>ascrazy</b>@jabber.ru
+            </a>
+          </li>
+        </ul>
       </section>
-      <footer class="row"><div class="twelve columns"><p><a href="https://github.com/ascrazy/icons">Icon pack</a></p></div></footer>
-    </div>
-    <div class="corner"><a class="language" href="/">Русский</a></div>
+    </main>
+    <footer>
+      <nav>
+        <li>
+          <a href="#" title="Scroll to top">ascrazy.me</a>
+        </li>
+        <li>
+          <a title="Email" href="mailto:alexander@ascrazy.me" target="_blank">Contact me</a>
+        </li>
+      </nav>
+    </footer>
   </body>
 </html>
+  

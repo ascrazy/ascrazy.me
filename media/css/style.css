@@ -47,6 +47,14 @@ header#main-header, footer {
 
 footer nav li a {
   padding-left: 0; }
+@media (min-width: 768px) {
+  footer nav li {
+    width: auto;
+    box-sizing: content-box; }
+    footer nav li a {
+      box-sizing: border-box;
+      padding-left: 1em;
+      padding-right: 1em; } }
 
 main section:not(:first-child) {
   margin-top: 2em; }
