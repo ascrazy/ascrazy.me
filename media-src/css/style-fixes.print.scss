@@ -1,0 +1,19 @@
+body * {
+  text-decoration: none !important;
+}
+main {
+  section header { 
+    h1, h2 {
+      border-bottom: 3px solid #303030;
+    }
+    h1 {
+      font-size: 1.7em; 
+    }
+    h2 {
+      font-size: 1.3em;  
+    }
+  }
+  section#general header {
+    margin-bottom: 0;
+  }
+}

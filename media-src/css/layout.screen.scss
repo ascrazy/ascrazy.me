@@ -1,0 +1,101 @@
+// General Layout section
+$mobile-spaces: 4px;
+
+$small-item-width: 120px;
+$small-content-width: $small-item-width * 6;
+
+$large-item-width: 150px;
+$large-content-width: $large-item-width * 6;
+
+$extralarge-item-width: 190px;
+$extralarge-content-width: $extralarge-item-width * 6;
+
+header#main-header, footer {
+  nav {
+    list-style: none;
+  }
+  @media (max-width: 767px) {
+    padding-left: $mobile-spaces;
+    padding-right: $mobile-spaces;
+  }
+  @media (min-width: 768px) {
+    text-align: center;  
+    nav {
+      display: inline-block;
+      li {
+        display: inline-block;
+        width: $small-item-width;
+        a {
+          display: block;
+          width: 100%;
+        }
+      }        
+    }
+  }
+  @media (min-width: 980px) {
+    nav li {
+      width: $large-item-width;
+    }
+  }
+  @media (min-width: 1200px) {
+    nav li {
+      width: $extralarge-item-width;
+    }
+  }
+}
+
+main {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  section {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  @media (max-width: 767px) {
+    section {
+      padding-left: $mobile-spaces;
+      padding-right: $mobile-spaces;
+    }
+  }
+  @media (min-width: 768px) {
+    text-align: center;
+    section {
+      display: inline-block;
+      width: $small-content-width;
+      text-align: left;
+    }
+  }
+  @media (min-width: 980px) {
+    section {
+      width: $large-content-width;
+    }
+  }
+  @media (min-width: 1200px) {
+   section {
+      width: $extralarge-content-width;
+    } 
+  }
+}
+
+footer {
+  text-align: center;
+  nav {
+    text-align: left;
+    li {
+      text-align: center;
+    }
+    @media (min-width: 768px) {
+      width: $small-content-width;
+    }
+    @media (min-width: 980px) {
+      width: $large-content-width;
+    }
+    @media (min-width: 1200px) {
+      width: $extralarge-content-width;
+    }
+  }
+}
+
+section#general, section#skills {
+  display: none;
+}

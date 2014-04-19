@@ -1,0 +1,66 @@
+header#main-header nav, footer nav {
+  list-style: none; }
+@media (max-width: 767px) {
+  header#main-header, footer {
+    padding-left: 4px;
+    padding-right: 4px; } }
+@media (min-width: 768px) {
+  header#main-header, footer {
+    text-align: center; }
+    header#main-header nav, footer nav {
+      display: inline-block; }
+      header#main-header nav li, footer nav li {
+        display: inline-block;
+        width: 120px; }
+        header#main-header nav li a, footer nav li a {
+          display: block;
+          width: 100%; } }
+@media (min-width: 980px) {
+  header#main-header nav li, footer nav li {
+    width: 150px; } }
+@media (min-width: 1200px) {
+  header#main-header nav li, footer nav li {
+    width: 190px; } }
+
+main {
+  padding-top: 2em;
+  padding-bottom: 2em; }
+  main section {
+    width: 100%;
+    box-sizing: border-box; }
+  @media (max-width: 767px) {
+    main section {
+      padding-left: 4px;
+      padding-right: 4px; } }
+  @media (min-width: 768px) {
+    main {
+      text-align: center; }
+      main section {
+        display: inline-block;
+        width: 720px;
+        text-align: left; } }
+  @media (min-width: 980px) {
+    main section {
+      width: 900px; } }
+  @media (min-width: 1200px) {
+    main section {
+      width: 1140px; } }
+
+footer {
+  text-align: center; }
+  footer nav {
+    text-align: left; }
+    footer nav li {
+      text-align: center; }
+    @media (min-width: 768px) {
+      footer nav {
+        width: 720px; } }
+    @media (min-width: 980px) {
+      footer nav {
+        width: 900px; } }
+    @media (min-width: 1200px) {
+      footer nav {
+        width: 1140px; } }
+
+section#general, section#skills {
+  display: none; }
