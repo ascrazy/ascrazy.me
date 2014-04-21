@@ -1,3 +1,6 @@
+button.opener {
+  display: none; }
+
 header#main-header nav, footer nav {
   list-style: none; }
 @media (max-width: 767px) {
@@ -64,3 +67,43 @@ footer {
 
 section#general, section#skills {
   display: none; }
+
+@media (max-width: 767px) {
+  html, body {
+    overflow-x: hidden; }
+
+  footer {
+    display: none; }
+
+  header#main-header {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    transition: right 0.2s ease; }
+
+  main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: left 0.2s ease, right 0.2s ease; }
+
+  header#main-header.opened {
+    right: 0px; }
+
+  header#main-header.opened + main {
+    left: -250px;
+    right: 250px; }
+
+  button.opener {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    line-height: 3em;
+    background-color: #fff;
+    border: 1px solid red;
+    outline: none;
+    box-sizing: border-box; } }
