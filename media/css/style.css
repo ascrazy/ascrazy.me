@@ -1,6 +1,6 @@
 body {
   font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 22px;
+  font-size: 18px;
   background-color: white;
   color: #303030;
   -webkit-font-smoothing: antialiased;
@@ -39,7 +39,7 @@ header#main-header, footer {
     header#main-header nav, footer nav {
       font-size: 0; }
       header#main-header nav li, footer nav li {
-        font-size: 22px; }
+        font-size: 18px; }
         header#main-header nav li a, footer nav li a {
           border-right: 1px solid white; }
         header#main-header nav li:first-child a, footer nav li:first-child a {
