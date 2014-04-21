@@ -10,33 +10,36 @@ Highlighter.prototype = {
     return this.queue.splice(0, 1)[0]
   },
   highlight: function(sectionId) {
-    if (sectionId && sectionId.length) {
+    if (sectionId) {
       this.queue.push(sectionId)
       if (!this.paused)
         this.process()
+    } else {
+      this.resetHighlight()
     }
   },
   process: function() {
     var sectionId
+    this.resetHighlight()
     if (sectionId = this.unshift()) {
-      console.log('process', sectionId)
       var element = document.getElementById(sectionId)
-      if(element) {
-        var _self = this
-        this._each.call(document.querySelectorAll('section'), function(section){
-          section.className = section.className.replace(_self.className, '')
-        })
+
+      if(element)
         element.className = element.className + ' ' + this.className
-      }
+      
       if(this.queue.length)
-        console.log('process1')
-        // this.process()
+        this.process()
     }
   },
   start: function() {
-    console.log('start')
     this.paused = false
     this.process()
+  },
+  resetHighlight: function() {
+    var _self = this
+    this._each.call(document.querySelectorAll('section'), function(section){
+      section.className = section.className.replace(_self.className, '')
+    })
   }
 }
 
