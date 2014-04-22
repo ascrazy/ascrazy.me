@@ -68,11 +68,15 @@ window.Menu = (function(){
     this.menu = menu;
     this.main = main;
 
+    this.mq = window.matchMedia("(max-width: 767px)")
+    this.mq.addListener(this.onMatchChanged.bind(this))
+    this.onMatchChanged(this.mq)
+
     this.button.addEventListener('click', this.toggle.bind(this));
 
     this._bindEvents(this.menu, TRANSITION_END_EVENTS, function(){
-      if (!this.isOpened()) {
-        this.menu.style.display = "none";
+      if (!this.isOpened() && this.mq.matches) {
+        this.hide(this.menu)
       }
     }.bind(this))
 
@@ -86,16 +90,28 @@ window.Menu = (function(){
 
   klass.prototype = {
     className: 'opened',
+    onMatchChanged: function(mq){
+      this.mq = mq
+      if (this.mq.matches) {
+        if (this.isOpened())
+          this.show(this.menu)
+        else
+          this.hide(this.menu)
+        this.height(this.menu, this._documentHeight())
+      } else {
+        this.show(this.menu)
+        this.height(this.menu, 'auto')
+      }
+    },
     isOpened: function() {
-      return new RegExp(this.className).test(this.menu.className);
+      return this.hasClass(this.menu, this.className);
     },
     open: function() {
-      this.menu.style.display = "block"
-      this.menu.style.height = document.body.scrollHeight.toString() + "px";
-      this.menu.className = this.className;
+      this.show(this.menu)
+      this.addClass(this.menu, this.className)
     },
     close: function() {
-      this.menu.className = "";
+      this.removeClass(this.menu, this.className)
     },
     toggle: function(event) {
       event.stopPropagation()
@@ -120,7 +136,25 @@ window.Menu = (function(){
         body.offsetHeight, 
         html.clientHeight, 
         html.scrollHeight, 
-        html.offsetHeight);
+        html.offsetHeight).toString() + "px";
+    },
+    addClass: function(element, className) {
+      element.className = element.className + ' ' + className;
+    },
+    removeClass: function(element, className) {
+      element.className = element.className.replace(className, '');
+    },
+    hasClass: function(element, className) {
+      return new RegExp(className).test(element.className);
+    },
+    show: function(element) {
+      element.style.display = 'block';
+    },
+    hide: function(element) {
+      element.style.display = 'none';
+    },
+    height: function(element, height) {
+      element.style.height = height;
     }
   };
 
@@ -137,7 +171,7 @@ window.Menu = (function(){
   });
 
   document.addEventListener('DOMContentLoaded', function() {    
-    m = new Menu(
+    window.m = new Menu(
       document.querySelector('button.opener'),
       document.querySelector('#main-header'),
       document.querySelector('#main-header + main'));

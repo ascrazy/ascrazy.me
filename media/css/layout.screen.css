@@ -77,7 +77,6 @@ section#general, section#skills {
 
   header#main-header {
     position: absolute;
-    display: none;
     top: 0;
     right: -250px;
     width: 250px;
