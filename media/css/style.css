@@ -10,52 +10,52 @@ body {
     body a:hover {
       color: #11639d; }
 
-header#main-header, footer {
+header#main-header, footer, aside {
   background-color: #303030;
   color: white; }
-  header#main-header nav li a, footer nav li a {
+  header#main-header nav li a, footer nav li a, aside nav li a {
     display: block;
     width: 100%;
     line-height: 3em;
     text-decoration: none;
+    background-color: #303030;
     color: white;
-    transition: background-color 0.2s ease, color 0.2s ease; }
-    header#main-header nav li a:hover, footer nav li a:hover {
-      background-color: white;
-      color: #303030;
-      transition: background-color 0.2s ease, color 0.2s ease; }
-  @media (max-width: 767px) {
-    header#main-header, footer {
-      padding: 0px; }
-      header#main-header nav li, footer nav li {
-        display: block;
-        width: 100%; }
-        header#main-header nav li a, footer nav li a {
-          padding-left: 2em;
-          box-sizing: border-box; }
-        header#main-header nav li:not(:last-child) a, footer nav li:not(:last-child) a {
-          border-bottom: 1px solid white; } }
-  @media (min-width: 768px) {
-    header#main-header nav, footer nav {
-      font-size: 0; }
-      header#main-header nav li, footer nav li {
-        font-size: 18px; }
-        header#main-header nav li a, footer nav li a {
-          border-right: 1px solid white; }
-        header#main-header nav li:first-child a, footer nav li:first-child a {
-          border-left: 1px solid white; } }
+    transition: background-color 0.5s ease; }
+    header#main-header nav li a:hover, footer nav li a:hover, aside nav li a:hover {
+      color: white;
+      text-decoration: none;
+      background-color: #484848; }
 
-footer nav li a {
-  padding-left: 0; }
-@media (min-width: 768px) {
-  footer nav li {
-    width: auto;
-    box-sizing: content-box; }
-    footer nav li a {
-      box-sizing: border-box;
-      padding-left: 1em;
-      padding-right: 1em; } }
+header#main-header nav, footer nav {
+  font-size: 0; }
+  header#main-header nav li, footer nav li {
+    font-size: 18px; }
+    header#main-header nav li a, footer nav li a {
+      border-right: 1px solid white; }
+    header#main-header nav li:first-child a, footer nav li:first-child a {
+      border-left: 1px solid white; }
 
+aside nav li a {
+  padding-left: 2em; }
+aside nav li:not(:last-child) a {
+  border-bottom: 1px solid white; }
+
+aside.opened + main button.opener {
+  border-right: 1px solid white; }
+
+main button.opener {
+  outline: none;
+  border: none;
+  padding: 0;
+  line-height: 3em;
+  text-decoration: none;
+  background-color: #303030;
+  color: white;
+  transition: background-color 0.5s ease; }
+  main button.opener:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #484848; }
 main section:not(:first-child) {
   margin-top: 2em; }
 main section header {

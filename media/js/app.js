@@ -1,3 +1,41 @@
+window.Helper = {
+  _bindEvents: function(element, eventsList, callback) {
+    for (var i = 0; i < eventsList.length; ++i) {
+      eventName = eventsList[i];
+      element.addEventListener(eventName, callback);
+    };
+  },
+  _documentHeight: function() {
+    var body = document.body,
+        html = document.documentElement;
+
+    return Math.max(
+      body.scrollHeight, 
+      body.offsetHeight, 
+      html.clientHeight, 
+      html.scrollHeight, 
+      html.offsetHeight).toString() + "px";
+  },
+  addClass: function(element, className) {
+    element.className = element.className + ' ' + className;
+  },
+  removeClass: function(element, className) {
+    element.className = element.className.replace(className, '');
+  },
+  hasClass: function(element, className) {
+    return new RegExp(className).test(element.className);
+  },
+  show: function(element) {
+    element.style.display = 'block';
+  },
+  hide: function(element) {
+    element.style.display = 'none';
+  },
+  height: function(element, height) {
+    element.style.height = height;
+  }
+}
+
 window.Highlighter = (function(){
   var klass = function() {
     this.queue = [];
@@ -68,50 +106,28 @@ window.Menu = (function(){
     this.menu = menu;
     this.main = main;
 
-    this.mq = window.matchMedia("(max-width: 767px)")
-    this.mq.addListener(this.onMatchChanged.bind(this))
-    this.onMatchChanged(this.mq)
-
     this.button.addEventListener('click', this.toggle.bind(this));
-
-    this._bindEvents(this.menu, TRANSITION_END_EVENTS, function(){
-      if (!this.isOpened() && this.mq.matches) {
-        this.hide(this.menu)
-      }
-    }.bind(this))
-
-    this._bindEvents(this.main, CLOSE_MENU_ON, function(event){
-      if (event.target != this.button && this.isOpened()) {
-        this.close();
-      }
-    }.bind(this));
+    Helper._bindEvents(this.menu, TRANSITION_END_EVENTS, this.onMenuClosed.bind(this))
+    Helper._bindEvents(this.main, CLOSE_MENU_ON, this.onMainTapped.bind(this));
   }
 
 
   klass.prototype = {
     className: 'opened',
-    onMatchChanged: function(mq){
-      this.mq = mq
-      if (this.mq.matches) {
-        if (this.isOpened())
-          this.show(this.menu)
-        else
-          this.hide(this.menu)
-        this.height(this.menu, this._documentHeight())
-      } else {
-        this.show(this.menu)
-        this.height(this.menu, 'auto')
-      }
-    },
     isOpened: function() {
-      return this.hasClass(this.menu, this.className);
+      return Helper.hasClass(this.menu, this.className);
     },
     open: function() {
-      this.show(this.menu)
-      this.addClass(this.menu, this.className)
+      Helper.show(this.menu)
+      Helper.height(this.menu, Helper._documentHeight());
+      // Without this wrapper transition on aside does not works
+      setTimeout(function(){
+        Helper.addClass(this.menu, this.className)
+      }.bind(this), 0)
+      
     },
     close: function() {
-      this.removeClass(this.menu, this.className)
+      Helper.removeClass(this.menu, this.className)
     },
     toggle: function(event) {
       event.stopPropagation()
@@ -121,40 +137,15 @@ window.Menu = (function(){
         this.open();
       }
     },
-    _bindEvents: function(element, eventsList, callback) {
-      for (var i = 0; i < eventsList.length; ++i) {
-        eventName = eventsList[i];
-        element.addEventListener(eventName, callback);
-      };
+    onMenuClosed: function(){
+      if (!this.isOpened()) {
+        Helper.hide(this.menu)
+      }
     },
-    _documentHeight: function() {
-      var body = document.body,
-          html = document.documentElement;
-
-      return Math.max(
-        body.scrollHeight, 
-        body.offsetHeight, 
-        html.clientHeight, 
-        html.scrollHeight, 
-        html.offsetHeight).toString() + "px";
-    },
-    addClass: function(element, className) {
-      element.className = element.className + ' ' + className;
-    },
-    removeClass: function(element, className) {
-      element.className = element.className.replace(className, '');
-    },
-    hasClass: function(element, className) {
-      return new RegExp(className).test(element.className);
-    },
-    show: function(element) {
-      element.style.display = 'block';
-    },
-    hide: function(element) {
-      element.style.display = 'none';
-    },
-    height: function(element, height) {
-      element.style.height = height;
+    onMainTapped: function(event){
+      if (event.target != this.button && this.isOpened()) {
+        this.close();
+      }
     }
   };
 
@@ -171,11 +162,11 @@ window.Menu = (function(){
   });
 
   document.addEventListener('DOMContentLoaded', function() {    
-    window.m = new Menu(
+    var m = new Menu(
       document.querySelector('button.opener'),
-      document.querySelector('#main-header'),
-      document.querySelector('#main-header + main'));
-
+      document.querySelector('aside'),
+      document.querySelector('aside + main'));
+    
     h.highlight(Highlighter.hash());
     h.start();
   });

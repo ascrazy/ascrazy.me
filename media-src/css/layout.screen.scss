@@ -10,15 +10,19 @@ $large-content-width: $large-item-width * 6;
 $extralarge-item-width: 190px;
 $extralarge-content-width: $extralarge-item-width * 6;
 
-button.opener { display: none; }
+$aside-width: 250px;
+$aside-speed: 0.3s;
+
+html, body {
+  overflow-x: hidden;
+}
 
 header#main-header, footer {
   nav {
     list-style: none;
   }
   @media (max-width: 767px) {
-    padding-left: $mobile-spaces;
-    padding-right: $mobile-spaces;
+    display: none;
   }
   @media (min-width: 768px) {
     text-align: center;  
@@ -28,6 +32,7 @@ header#main-header, footer {
         display: inline-block;
         width: $small-item-width;
         a {
+          box-sizing: border-box;
           display: block;
           width: 100%;
         }
@@ -46,17 +51,67 @@ header#main-header, footer {
   }
 }
 
+  
+aside {
+  display: none;
+  nav {
+    li {
+      display: block;
+      width: 100%;
+      a {
+        box-sizing: border-box;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    display: none !important;
+  }  
+  @media (max-width: 767px) {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -$aside-width;
+    width: $aside-width;
+    transition: right $aside-speed ease;
+    &.opened {
+      right: 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  aside.opened + main {
+    left: -$aside-width;
+    right: $aside-width;
+  }
+}
+
 main {
   padding-top: 2em;
   padding-bottom: 2em;
+  button.opener {
+    display: none;
+    box-sizing: border-box;
+  }
   section {
     width: 100%;
     box-sizing: border-box;
   }
   @media (max-width: 767px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: left $aside-speed ease, right $aside-speed ease;
     section {
       padding-left: $mobile-spaces;
       padding-right: $mobile-spaces;
+    }
+    button.opener {
+      display: block;
+      width: 100%;
+      position: absolute;
+      top: 0;
     }
   }
   @media (min-width: 768px) {
@@ -101,48 +156,3 @@ footer {
 section#general, section#skills {
   display: none;
 }
-
-@media(max-width: 767px) {
-  $menu-width: 250px;
-  $open-speed: 0.2s;
-
-  html, body {
-    overflow-x: hidden;
-  }
-  footer {
-    display: none;
-  }
-  header#main-header {
-    position: absolute;
-    top: 0;
-    right: -$menu-width;
-    width: $menu-width;
-    transition: right $open-speed ease;
-  }
-  main {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    transition: left $open-speed ease, right $open-speed ease;
-  }
-  header#main-header.opened {
-    right: 0px;
-  }
-  header#main-header.opened + main {
-    left: -$menu-width;
-    right: $menu-width;
-  }
-  button.opener {
-    display: block;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    line-height: 3em;
-    background-color: #fff;
-    border: 1px solid red; 
-    outline: none;
-    box-sizing: border-box;
-  }
-}
-
