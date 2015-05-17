@@ -1,2 +1,7 @@
-/.c9revisions
-/.sass-cache
+/.vagrant
+/build
+!/build/.keep
+/tmp
+!/tmp/.keep
+/node_modules
+/npm-debug.log

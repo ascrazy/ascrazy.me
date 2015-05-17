@@ -10,10 +10,10 @@ window.Helper = {
         html = document.documentElement;
 
     return Math.max(
-      body.scrollHeight, 
-      body.offsetHeight, 
-      html.clientHeight, 
-      html.scrollHeight, 
+      body.scrollHeight,
+      body.offsetHeight,
+      html.clientHeight,
+      html.scrollHeight,
       html.offsetHeight).toString() + "px";
   },
   addClass: function(element, className) {
@@ -65,7 +65,7 @@ window.Highlighter = (function(){
 
         if(element)
           element.className = element.className + ' ' + this.className;
-        
+
         if(this.queue.length)
           this.process();
       }
@@ -124,7 +124,7 @@ window.Menu = (function(){
       setTimeout(function(){
         Helper.addClass(this.menu, this.className)
       }.bind(this), 0)
-      
+
     },
     close: function() {
       Helper.removeClass(this.menu, this.className)
@@ -154,24 +154,21 @@ window.Menu = (function(){
 
 (function(){
   var h, m;
-  
+
   h = new Highlighter();
 
   window.addEventListener('hashchange', function() {
     h.highlight(Highlighter.hash());
   });
 
-  document.addEventListener('DOMContentLoaded', function() {    
+  document.addEventListener('DOMContentLoaded', function() {
     var m = new Menu(
       document.querySelector('button.opener'),
       document.querySelector('aside'),
       document.querySelector('aside + main'));
-    
+
     h.highlight(Highlighter.hash());
     h.start();
   });
 
 })();
-
-
-
