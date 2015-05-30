@@ -11,6 +11,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network :forwarded_port, host: 8080, guest: 8080
   config.vm.network :forwarded_port, host: 35729, guest: 35729
 
+  config.ssh.private_key_path = "~/.ssh/id_rsa"
   config.ssh.forward_agent = true
 
   config.vm.provision :file, source: '~/.gitconfig', destination: '~/.gitconfig'

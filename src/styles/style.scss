@@ -13,7 +13,7 @@ $menu-hover-bg-color: #484848;
 @mixin menu-link {
   line-height: 3em;
   text-decoration: none;
-  background-color: $menu-bg-color; 
+  background-color: $menu-bg-color;
   color: $menu-font-color;
   transition: background-color 0.5s ease;
   &:hover {
@@ -26,7 +26,7 @@ $menu-hover-bg-color: #484848;
 body {
   font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: $font-size;
-  background-color: $bg-color; 
+  background-color: $bg-color;
   color: #303030;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
@@ -126,7 +126,7 @@ main section#about {
       width: 10em;
       height: 10em;
       content: ' ';
-      background-image: url("/media/images/me.jpg");
+      background-image: url("/images/me.jpg");
       background-position: center center;
       background-size: 150px auto;
       background-repeat: no-repeat;
@@ -229,31 +229,31 @@ main section {
 }
 
 a {
-  &.tel {
-    background-image: url("/media/images/phone.svg");
-  }
-  &.email {
-    background-image: url("/media/images/email.svg");
-  }
-  &.web {
-    background-image: url("/media/images/www.svg");
-  }
   &:hover {
     text-decoration: underline;
   }
-  &.github {
-    background-image: url("/media/images/github.svg")
-  }
-  &.linkedin {
-    background-image: url("/media/images/linkedin.svg")
-  }
-  &.facebook {
-    background-image: url("/media/images/facebook.svg")
+  &.tel {
+    background-image: url("/images/phone.svg");
   }
   &.email {
-    background-image: url("/media/images/email.svg")
+    background-image: url("/images/email.svg");
+  }
+  &.web {
+    background-image: url("/images/www.svg");
+  }
+  &.github {
+    background-image: url("/images/github.svg")
+  }
+  &.linkedin {
+    background-image: url("/images/linkedin.svg")
+  }
+  &.facebook {
+    background-image: url("/images/facebook.svg")
+  }
+  &.email {
+    background-image: url("/images/email.svg")
   }
   &.xmpp {
-    background-image: url("/media/images/jabber.svg")
+    background-image: url("/images/jabber.svg")
   }
 }

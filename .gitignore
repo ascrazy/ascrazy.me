@@ -1,7 +1,9 @@
+.DS_Store
 /.vagrant
+/node_modules
+/npm-debug.log
+
 /build
 !/build/.keep
 /tmp
 !/tmp/.keep
-/node_modules
-/npm-debug.log

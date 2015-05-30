@@ -1,7 +1,9 @@
+
+
 window.Helper = {
   _bindEvents: function(element, eventsList, callback) {
     for (var i = 0; i < eventsList.length; ++i) {
-      eventName = eventsList[i];
+      var eventName = eventsList[i];
       element.addEventListener(eventName, callback);
     };
   },
@@ -169,6 +171,7 @@ window.Menu = (function(){
 
     h.highlight(Highlighter.hash());
     h.start();
+
   });
 
 })();
