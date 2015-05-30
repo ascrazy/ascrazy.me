@@ -23,9 +23,12 @@ $menu-hover-bg-color: #484848;
   }
 }
 
-body {
-  font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
+html {
+  font-family: Ubuntu, sans-serif;
   font-size: $font-size;
+}
+
+body {
   background-color: $bg-color;
   color: #303030;
   -webkit-font-smoothing: antialiased;
