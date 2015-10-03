@@ -3,7 +3,7 @@
 /node_modules
 /npm-debug.log
 
-/build
-!/build/.keep
+/dist
+!/dist/.keep
 /tmp
 !/tmp/.keep

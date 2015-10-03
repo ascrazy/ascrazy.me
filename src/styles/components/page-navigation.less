@@ -1,0 +1,25 @@
+.page-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+  > .nav-item {
+    flex-grow: 1;
+  }
+  @media(max-width: @mobile) {
+    flex-direction: column;
+    > .nav-item {
+      align-items: stretch;
+    }
+  }
+}
+
+.nav-item {
+  list-style: none;
+  > .link {
+    display: block;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.5rem;
+  }
+}
