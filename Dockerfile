@@ -1,18 +1,21 @@
-FROM alpine:latest
+FROM ubuntu:trusty
 
-ENV H2O_VERSION="1.5.0"
-RUN apk add --update build-base cmake zlib zlib-dev openssl openssl-dev \
-  && wget "https://github.com/h2o/h2o/archive/v$H2O_VERSION.tar.gz" -O - | tar -xz -C /tmp \
-  && cd "/tmp/h2o-$H2O_VERSION" \
-  && cmake . \
-  && make \
-  && make install  \
-  && cd - \
-  && rm -rf "/tmp/h2o-$H2O_VERSION" \
-  && apk del --update build-base cmake zlib-dev openssl-dev \
-  && rm -rf /var/cache/apk/*
-RUN mkdir -p /opt/app/dist
-WORKDIR /opt/app
-ADD /dist ./dist
-ADD /h2o.conf ./h2o.conf
-CMD [ "/usr/local/bin/h2o", "-c", "./h2o.conf" ]
+ENV DEBIAN_FRONTEND="noninteractive"
+ENV APP_ROOT="/opt/homepage"
+
+RUN mkdir -p $APP_ROOT
+WORKDIR $APP_ROOT
+
+RUN apt-get update && \
+    apt-get install -y openssl ca-certificates apt-transport-https curl --no-install-recommends && \
+    apt-get install -y make jq git --no-install-recommends && \
+    apt-get install -y build-essential zlib1g-dev libpq-dev libsqlite3-dev --no-install-recommends && \
+    rm -rf /var/cache/apt/*
+
+RUN curl -sL https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add - && \
+    echo 'deb https://deb.nodesource.com/node_5.x trusty main' >> /etc/apt/sources.list && \
+    apt-get update && \
+    apt-get install -y nodejs python --no-install-recommends && \
+    rm -rf /var/cache/apt/*
+
+  # apt-key adv --keyserver keys.gnupg.net --recv-keys 68576280 && \

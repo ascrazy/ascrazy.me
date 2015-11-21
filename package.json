@@ -6,12 +6,6 @@
     "type": "git",
     "url": "https://github.com/ascrazy/ascrazy.github.com"
   },
-  "scripts": {
-    "lint": "eslint ./src/",
-    "start": "webpack-dev-server",
-    "build": "npm run clean && webpack --config webpack.config.prod.js",
-    "clean": "rm -rf ./dist/*"
-  },
   "devDependencies": {
     "autoprefixer": "^6.0.3",
     "babel": "^5.8.23",
@@ -22,6 +16,7 @@
     "eslint": "^1.6.0",
     "eslint-config-airbnb": "0.1.0",
     "extract-text-webpack-plugin": "~0.8.2",
+    "file-loader": "^0.8.4",
     "html-webpack-plugin": "^2.0.3",
     "less": "~2.5.3",
     "less-loader": "~2.2.1",

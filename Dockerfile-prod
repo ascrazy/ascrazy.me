@@ -1,0 +1,4 @@
+FROM vimagick/h2o:latest
+
+ADD h2o.conf /etc/h2o.conf
+ADD dist/ /var/www/html/

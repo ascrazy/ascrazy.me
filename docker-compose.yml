@@ -1,0 +1,8 @@
+webpack:
+  build: .
+  dockerfile: Dockerfile
+  command: node_modules/.bin/webpack-dev-server
+  ports:
+    - "3000:3000"
+  volumes:
+    - ".:/opt/homepage"
