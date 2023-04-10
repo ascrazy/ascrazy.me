@@ -1,4 +1,0 @@
-Sitemap: http://ascrazy.me/sitemap.xml
-User-Agent: *
-Host: ascrazy.me
-
