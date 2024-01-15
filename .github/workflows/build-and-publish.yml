@@ -1,0 +1,30 @@
+name: Build & Publish Resume
+
+on:
+  push:
+    branches:
+      - master
+
+concurrency: build-and-publish-on-master
+
+jobs:
+  publish:
+    name: Build & Publish
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v3
+      - uses: oven-sh/setup-bun@v1
+      - name: Install deps
+        run: bun install
+      - name: Build Resume
+        run: bun run build
+      - name: Upload Resume
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public/
+      - name: Publish Resume
+        uses: actions/deploy-pages@v4

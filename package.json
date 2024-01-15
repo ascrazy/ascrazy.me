@@ -18,7 +18,7 @@
     "serve": "^14.2.1"
   },
   "scripts": {
-    "build": "resume export --theme ./theme --resume ./data/resume.json public/index.html",
+    "build": "bun --bun resume export --theme ./theme --resume ./data/resume.json public/index.html",
     "build:watch": "chokidar ./data/**/* ./theme/**/* -c \"bun run build\"",
     "serve": "serve ./public -n -p 4000"
   }
