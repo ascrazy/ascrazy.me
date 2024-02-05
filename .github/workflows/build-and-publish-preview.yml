@@ -1,11 +1,11 @@
-name: Build & Publish Resume
+name: Build & Publish Resume Preview
 
 on:
-  push:
+  pull_request:
     branches:
       - master
 
-concurrency: build-and-publish-on-master
+concurrency: build-and-publish-preview-${{ github.head_ref }}
 
 jobs:
   publish:
@@ -30,4 +30,3 @@ jobs:
           projectName: ascrazy-me
           directory: public/
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
