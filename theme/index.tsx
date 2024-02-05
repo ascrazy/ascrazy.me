@@ -9,6 +9,7 @@ export async function render(resume: ResumeType) {
         <html>
             <head>
                 <title>{resume.basics.name}</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
                 <style>
                     {css}                    
                 </style>

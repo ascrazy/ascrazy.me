@@ -1,7 +1,28 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 body {
     margin: 0 1rem;    
 }
 
 main {
     max-width: 800px;
+}
+
+.Work__meta {
+    display: inline;
+}
+
+.Work__meta__position {
+    font-weight: bolder;
+}
+
+.Work__meta__divider {
+    
+}
+
+.Work__meta__dates {
+    font-size: .9em;
+    font-style: italic;
 }
