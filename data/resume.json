@@ -6,17 +6,22 @@
     "image": "",
     "email": "i.alexandr.sh@gmail.com",
     "phone": "",
-    "url": "https://www.linkedin.com/in/ashahorsky/",
+    "url": "https://linkedin.com/in/ashahorsky/",
     "summary": "As a specialist in web application development, I bring profound expertise in both frontend and backend domains, with a strong emphasis on React.js and Ruby on Rails. My depth of knowledge spans across various technology stacks, ensuring seamless interoperability and a solid command of related tools and technologies. I am passionately devoted to developing user-centric interfaces, with a focus on clean, efficient, and rapid designs that significantly improve user experience and engagement. My approach is a blend of technical skill and a dedicated emphasis on crafting intuitive and visually striking digital solutions.",
     "location": {
-      "countryCode": "US",
+      "countryCode": "PL",
       "address": "Poland"
     },
     "profiles": [
       {
         "network": "LinkedIn",
         "username": "ashahorsky",
-        "url": "https://www.linkedin.com/in/ashahorsky/"
+        "url": "https://linkedin.com/in/ashahorsky/"
+      },
+      {
+        "network": "GitHub",
+        "username": "ascrazy",
+        "url": "https://github.com/ascrazy"
       }
     ]
   },
@@ -319,7 +324,7 @@
   "languages": [
     {
       "language": "English",
-      "fluency": "Native Speaker"
+      "fluency": "C1 Advanced"
     }
   ],
   "interests": [],
