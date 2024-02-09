@@ -20,7 +20,7 @@ jobs:
       - name: Install deps
         run: bun install
       - name: Build Resume
-        run: bun run build      
+        run: bun run export      
       - name: Deploy
         id: deploy
         uses: cloudflare/pages-action@v1

@@ -1,332 +1,332 @@
 {
-    "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
-    "basics": {
-      "name": "Alexander Shahorsky",
-      "label": "Senior Software Engineer",
-      "image": "",
-      "email": "i.alexandr.sh@gmail.com",
-      "phone": "",
-      "url": "",
-      "summary": "As a specialist in web application development, I bring profound expertise in both frontend and backend domains, with a strong emphasis on React.js and Ruby on Rails. My depth of knowledge spans across various technology stacks, ensuring seamless interoperability and a solid command of related tools and technologies. I am passionately devoted to developing user-centric interfaces, with a focus on clean, efficient, and rapid designs that significantly improve user experience and engagement. My approach is a blend of technical skill and a dedicated emphasis on crafting intuitive and visually striking digital solutions.",
-      "location": {
-        "countryCode": "US",
-        "address": "Poland"
-      },
-      "profiles": [
-        {
-          "network": "LinkedIn",
-          "username": "ashahorsky",
-          "url": "https://www.linkedin.com/in/ashahorsky/"
-        }
-      ]
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Alexander Shahorsky",
+    "label": "Senior Software Engineer",
+    "image": "",
+    "email": "i.alexandr.sh@gmail.com",
+    "phone": "",
+    "url": "https://www.linkedin.com/in/ashahorsky/",
+    "summary": "As a specialist in web application development, I bring profound expertise in both frontend and backend domains, with a strong emphasis on React.js and Ruby on Rails. My depth of knowledge spans across various technology stacks, ensuring seamless interoperability and a solid command of related tools and technologies. I am passionately devoted to developing user-centric interfaces, with a focus on clean, efficient, and rapid designs that significantly improve user experience and engagement. My approach is a blend of technical skill and a dedicated emphasis on crafting intuitive and visually striking digital solutions.",
+    "location": {
+      "countryCode": "US",
+      "address": "Poland"
     },
-    "work": [
+    "profiles": [
       {
-        "name": "Toptal",
-        "position": "Frontend Engineer",
-        "startDate": "2021-11-30",
-        "endDate": "",
-        "highlights": [],
-        "summary": "Working on support & development of internal tools based on web technology. Mostly focusing on React-powered frontend but also touching some Ruby on Rails powered backend stuff.",
-        "url": "https://www.linkedin.com/company/toptal/"
-      },
-      {
-        "name": "Code Art",
-        "position": "Full Stack Engineer",
-        "startDate": "2020-05-31",
-        "endDate": "2021-10-31",
-        "highlights": [],
-        "summary": "Specialized in frontend web development, primarily using React.js, with occasional contributions to Node.js-based backends across various projects. Developed a mobile-first frontend application with React.js and Material-UI for FlexGolf Fundraisers, a startup enabling online organization, promotion, and tracking of golf tournaments. Engineered a React.js web application incorporating a Fabric.js interactive whiteboard for Reading with TLC Studio, an innovative e-learning platform. Improved and expanded both public-facing and back-office applications for a social media management and automation platform, enhancing functionality and user experience.",
-        "url": "https://www.linkedin.com/company/code-art-llc/"
-      },
-      {
-        "name": "WEGO Health",
-        "position": "Frontend Engineer",
-        "startDate": "2019-03-31",
-        "endDate": "2020-05-31",
-        "highlights": [],
-        "summary": "Developed a mobile-optimized frontend application for a social media platform, focusing on user experience and responsiveness. Created a corresponding back-office application to enhance platform management and backend operations.",
-        "url": "https://www.linkedin.com/company/wego-health/"
-      },
-      {
-        "name": "SalonUltimate",
-        "position": "Frontend Engineer",
-        "startDate": "2017-11-30",
-        "endDate": "2019-03-31",
-        "highlights": [],
-        "summary": "Contributed to the development of a beauty services booking platform, focusing on modernizing the legacy frontend. Led the transition from a Backbone.js-based application to a contemporary React.js framework, incorporating new features and enhancements.",
-        "url": "https://www.linkedin.com/company/salonultimate/"
-      },
-      {
-        "name": "Gleam.io",
-        "position": "Full Stack Engineer",
-        "startDate": "2016-06-30",
-        "endDate": "2017-09-30",
-        "highlights": [],
-        "summary": "Specialized in the maintenance and enhancement of an SMM platform utilizing a Ruby on Rails backend and Angular.js frontend. Engaged in extensive collaboration to integrate various third-party APIs, achieving seamless functionality and system interoperability.",
-        "url": "https://www.linkedin.com/company/gleam-io/"
-      },
-      {
-        "name": "Itransition Group",
-        "position": "Software Engineer",
-        "startDate": "2011-09-30",
-        "endDate": "2016-05-31",
-        "highlights": [],
-        "summary": "I joined Itransition as a Junior Software Engineer after completing their 2-month-long bootcamp. Initially, my focus was on web development using Ruby on Rails. Over these nearly 5 years, I advanced to hold both technical and team leadership roles in various projects. Additionally, I provided mentorship to interns who joined the company. My technology focus gradually shifted toward the frontend area. I played a significant role in pushing the teams I worked with to gain expertise in developing more complex frontend applications, utilizing modern frameworks such as Backbone.js. Later, we also transitioned to React in its very early days.",
-        "url": "https://www.linkedin.com/company/itransition/",
-        "location": "Minsk, Belarus"
-      },
-      {
-        "name": "Bamboo mobi",
-        "position": "System Administration",
-        "startDate": "2011-02-28",
-        "endDate": "2011-08-31",
-        "highlights": [],
-        "summary": "Provided comprehensive support for telecom-specific software, encompassing database servers and custom in-house applications. Initiated my career in software engineering by designing and implementing tools to automate content management processes.",
-        "url": "https://www.linkedin.com/company/ou-bamboo-group/",
-        "location": "Belarus, Minsk"
+        "network": "LinkedIn",
+        "username": "ashahorsky",
+        "url": "https://www.linkedin.com/in/ashahorsky/"
       }
-    ],
-    "volunteer": [],
-    "education": [
-      {
-        "institution": "Belaruski Dziarzhauny Universitet",
-        "area": "Mathematics",
-        "studyType": "Bachelor of Science (BS)",
-        "startDate": "2008-12-31",
-        "endDate": "2013-12-31",
-        "score": "",
-        "courses": []
-      }
-    ],
-    "awards": [],
-    "certificates": [
-      {
-        "name": "Machine Learning",
-        "issuer": "Coursera",
-        "startDate": "2016-06-30",
-        "url": "https://coursera.org/share/3740eabc91dc17d92f28964d29aead59"
-      }
-    ],
-    "publications": [],
-    "skills": [
-      {
-        "name": "TypeScript",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "React.js",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "JavaScript",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "Material-UI",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "Itransition Group",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "Elasticsearch",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "AngularJS",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "Zapier",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "MySQL",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "Full-Stack Development",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "Engineering",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "MailChimp",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "PostgreSQL",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "Web Engineering",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "Docker Products",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "Node.js",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "Flux",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "Mean Stack",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "Software Design",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "Git",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "jsdoc",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "Software Infrastructure",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "GraphQL",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "Web Development",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "SASS",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "jQuery",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "Secure Shell (SSH)",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "fabric.js",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "Backbone.js",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "Responsive Web Design",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "HTML 5",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "RSpec",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "Linux System Administration",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "REST APIs",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "HTML5",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "Ruby",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "Linux",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "Web Technologies",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "Microsoft Excel",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "Representational State Transfer (REST)",
-        "level": "",
-        "keywords": []
-      },
-      {
-        "name": "Ruby on Rails",
-        "level": "",
-        "keywords": []
-      }
-    ],
-    "languages": [
-      {
-        "language": "English",
-        "fluency": "Native Speaker"
-      }
-    ],
-    "interests": [],
-    "references": [],
-    "projects": [],
-    "meta": {
-      "version": "v1.0.0",
-      "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+    ]
+  },
+  "work": [
+    {
+      "name": "Toptal",
+      "position": "Frontend Engineer",
+      "startDate": "2021-11-30",
+      "endDate": "",
+      "highlights": [],
+      "summary": "Working on support & development of internal tools based on web technology. Mostly focusing on React-powered frontend but also touching some Ruby on Rails powered backend stuff.",
+      "url": "https://www.linkedin.com/company/toptal/"
+    },
+    {
+      "name": "Code Art",
+      "position": "Full Stack Engineer",
+      "startDate": "2020-05-31",
+      "endDate": "2021-10-31",
+      "highlights": [],
+      "summary": "Specialized in frontend web development, primarily using React.js, with occasional contributions to Node.js-based backends across various projects. Developed a mobile-first frontend application with React.js and Material-UI for FlexGolf Fundraisers, a startup enabling online organization, promotion, and tracking of golf tournaments. Engineered a React.js web application incorporating a Fabric.js interactive whiteboard for Reading with TLC Studio, an innovative e-learning platform. Improved and expanded both public-facing and back-office applications for a social media management and automation platform, enhancing functionality and user experience.",
+      "url": "https://www.linkedin.com/company/code-art-llc/"
+    },
+    {
+      "name": "WEGO Health",
+      "position": "Frontend Engineer",
+      "startDate": "2019-03-31",
+      "endDate": "2020-05-31",
+      "highlights": [],
+      "summary": "Developed a mobile-optimized frontend application for a social media platform, focusing on user experience and responsiveness. Created a corresponding back-office application to enhance platform management and backend operations.",
+      "url": "https://www.linkedin.com/company/wego-health/"
+    },
+    {
+      "name": "SalonUltimate",
+      "position": "Frontend Engineer",
+      "startDate": "2017-11-30",
+      "endDate": "2019-03-31",
+      "highlights": [],
+      "summary": "Contributed to the development of a beauty services booking platform, focusing on modernizing the legacy frontend. Led the transition from a Backbone.js-based application to a contemporary React.js framework, incorporating new features and enhancements.",
+      "url": "https://www.linkedin.com/company/salonultimate/"
+    },
+    {
+      "name": "Gleam.io",
+      "position": "Full Stack Engineer",
+      "startDate": "2016-06-30",
+      "endDate": "2017-09-30",
+      "highlights": [],
+      "summary": "Specialized in the maintenance and enhancement of an SMM platform utilizing a Ruby on Rails backend and Angular.js frontend. Engaged in extensive collaboration to integrate various third-party APIs, achieving seamless functionality and system interoperability.",
+      "url": "https://www.linkedin.com/company/gleam-io/"
+    },
+    {
+      "name": "Itransition Group",
+      "position": "Software Engineer",
+      "startDate": "2011-09-30",
+      "endDate": "2016-05-31",
+      "highlights": [],
+      "summary": "I joined Itransition as a Junior Software Engineer after completing their 2-month-long bootcamp. Initially, my focus was on web development using Ruby on Rails. Over these nearly 5 years, I advanced to hold both technical and team leadership roles in various projects. Additionally, I provided mentorship to interns who joined the company. My technology focus gradually shifted toward the frontend area. I played a significant role in pushing the teams I worked with to gain expertise in developing more complex frontend applications, utilizing modern frameworks such as Backbone.js. Later, we also transitioned to React in its very early days.",
+      "url": "https://www.linkedin.com/company/itransition/",
+      "location": "Minsk, Belarus"
+    },
+    {
+      "name": "Bamboo mobi",
+      "position": "System Administration",
+      "startDate": "2011-02-28",
+      "endDate": "2011-08-31",
+      "highlights": [],
+      "summary": "Provided comprehensive support for telecom-specific software, encompassing database servers and custom in-house applications. Initiated my career in software engineering by designing and implementing tools to automate content management processes.",
+      "url": "https://www.linkedin.com/company/ou-bamboo-group/",
+      "location": "Belarus, Minsk"
     }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Belaruski Dziarzhauny Universitet",
+      "area": "Mathematics",
+      "studyType": "Bachelor of Science (BS)",
+      "startDate": "2008-12-31",
+      "endDate": "2013-12-31",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "certificates": [
+    {
+      "name": "Machine Learning",
+      "issuer": "Coursera",
+      "startDate": "2016-06-30",
+      "url": "https://coursera.org/share/3740eabc91dc17d92f28964d29aead59"
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "TypeScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "React.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "JavaScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Material-UI",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Itransition Group",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Elasticsearch",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "AngularJS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Zapier",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MySQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Full-Stack Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Engineering",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MailChimp",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Engineering",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Docker Products",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Node.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Flux",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Mean Stack",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Software Design",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Git",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "jsdoc",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Software Infrastructure",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "GraphQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "SASS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "jQuery",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Secure Shell (SSH)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "fabric.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Backbone.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Responsive Web Design",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML 5",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "RSpec",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Linux System Administration",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "REST APIs",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML5",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Ruby",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Linux",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Technologies",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Microsoft Excel",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Representational State Transfer (REST)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Ruby on Rails",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native Speaker"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": [],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
   }
+}
