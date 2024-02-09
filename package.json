@@ -12,14 +12,13 @@
     "@types/react": "^18.2.47",
     "@types/react-dom": "^18.2.18",
     "chokidar-cli": "^3.0.0",
+    "five-server": "^0.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "resume-cli": "^3.0.8",
-    "serve": "^14.2.1"
+    "resume-schema-zod": "^0.2.1"
   },
   "scripts": {
-    "build": "bun --bun resume export --theme ./theme --resume ./data/resume.json public/index.html",
-    "build:watch": "chokidar ./data/**/* ./theme/**/* -c \"bun run build\"",
-    "serve": "serve ./public -n -p 4000"
+    "export": "bun run ./src/scripts/export.ts",
+    "dev": "bun run ./src/scripts/dev.ts "
   }
 }
