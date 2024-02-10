@@ -4,7 +4,9 @@
   "service": "app",
   "workspaceFolder": "/workspace",
   "shutdownAction": "stopCompose",
-  "forwardPorts": [3000],
+  "forwardPorts": [
+    3000
+  ],
   "customizations": {
     "vscode": {
       "extensions": [
@@ -13,15 +15,33 @@
         "ms-azuretools.vscode-docker",
         "github.vscode-github-actions",
         "yoavbls.pretty-ts-errors",
-        // "biomejs.biome"
+        "biomejs.biome"
       ],
       "settings": {
-        "editor.tabSize": 2,        
-        "editor.formatOnSave": true,
-        // "editor.codeActionsOnSave": {
-        //   "quickfix.biome": true,
-        //   "source.organizeImports.biome": true
-        // }
+        "editor.tabSize": 2,
+        "editor.formatOnSave": true,        
+        "editor.codeActionsOnSave": {
+          "quickfix.biome": true,
+          "source.organizeImports.biome": true
+        },
+        "[javascript]": {
+          "editor.defaultFormatter": "biomejs.biome"
+        },
+        "[javascriptreact]": {
+          "editor.defaultFormatter": "biomejs.biome"
+        },
+        "[typescript]": {
+          "editor.defaultFormatter": "biomejs.biome"
+        },
+        "[typescriptreact]": {
+          "editor.defaultFormatter": "biomejs.biome"
+        },
+        "[json]": {
+          "editor.defaultFormatter": "biomejs.biome"
+        },
+        "[jsonc]": {
+          "editor.defaultFormatter": "biomejs.biome"
+        }
       }
     }
   }
