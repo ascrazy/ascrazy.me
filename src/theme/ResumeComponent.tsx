@@ -1,5 +1,5 @@
 import { format, parseISO } from "date-fns";
-import { type Resume } from "resume-schema-zod/dist/lib";
+import type { Resume } from "resume-schema-zod/dist/lib";
 import { prettyUrl } from "./prettyUrl";
 import { toSlug } from "./toSlug";
 

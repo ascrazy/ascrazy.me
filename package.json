@@ -26,7 +26,7 @@
 	"scripts": {
 		"export": "bun run ./src/scripts/export.ts",
 		"dev": "bun run ./src/scripts/dev.ts ",
-		"biome:format": "bunx biome check --apply .",
+		"biome:format": "bunx biome check --write .",
 		"biome:check": "bunx biome check ."
 	}
 }

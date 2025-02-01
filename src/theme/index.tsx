@@ -1,9 +1,9 @@
-import { promises as fs } from "fs";
+import { promises as fs } from "node:fs";
 import tailwindPostcss from "@tailwindcss/postcss";
 import autoprefixer from "autoprefixer";
 import postcss from "postcss";
 import { renderToString } from "react-dom/server";
-import { type Resume } from "resume-schema-zod/dist/lib";
+import type { Resume } from "resume-schema-zod/dist/lib";
 import { ResumeComponent } from "./ResumeComponent";
 
 export default async function render(resume: Resume) {
