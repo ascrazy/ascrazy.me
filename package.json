@@ -22,6 +22,7 @@
 	"scripts": {
 		"export": "bun run ./src/scripts/export.ts",
 		"dev": "bun run ./src/scripts/dev.ts ",
-		"format-all": "bunx biome check --apply --no-errors-on-unmatched --files-ignore-unknown=true ."
+		"biome:format": "bunx biome check --apply .",
+		"biome:check": "bunx biome check ."
 	}
 }
