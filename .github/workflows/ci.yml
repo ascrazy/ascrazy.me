@@ -1,0 +1,40 @@
+name: Build & Publish Resume
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+concurrency: ci-${{ github.event_name == 'push' && 'main' || github.head_ref }}
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: oven-sh/setup-bun@v1
+      - run: bun install
+      - run: bun biome:check
+      - run: bun test
+  publish:
+    needs: check
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write      
+    steps:
+      - uses: actions/checkout@v3
+      - uses: oven-sh/setup-bun@v1
+      - run: bun install
+      - run: bun run export      
+      - uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: ascrazy-me
+          directory: public/
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.event_name == 'push' && 'main' || github.head_ref }}
