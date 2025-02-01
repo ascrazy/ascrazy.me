@@ -13,7 +13,15 @@ export default async function render(resume: Resume) {
 				<style>{css}</style>
 			</head>
 			<body>
-				<ResumeComponent resume={resume} />
+				<div
+					style={{
+						maxWidth: "768px",
+						margin: "0 auto",
+						padding: "0 16px",
+					}}
+				>
+					<ResumeComponent resume={resume} />
+				</div>
 			</body>
 		</html>,
 	);
