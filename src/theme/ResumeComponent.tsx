@@ -7,25 +7,31 @@ const DATE_FORMAT = "LLL yyyy";
 
 export function ResumeComponent({ resume }: { resume: Resume }) {
 	return (
-		<main>
+		<main className="max-w-3xl pb-20">
 			{resume.basics && (
 				<>
-					<h1>{resume.basics.name}</h1>
-					<p>
+					<h1 className="text-3xl font-bold mb-2">{resume.basics.name}</h1>
+					<p className="mb-4">
 						<b>{resume.basics.label}</b>
 					</p>
 					<p>{resume.basics.summary}</p>
 					{resume.basics.profiles && resume.basics.profiles.length > 0 && (
-						<section id="profiles">
+						<section id="profiles" className="mt-4">
 							<ul>
-								{resume.basics.profiles.map((profile, idx) => {
+								{resume.basics.profiles.map((profile) => {
 									if (!profile.url) {
 										return null;
 									}
 
 									return (
 										<li key={profile.url}>
-											<a href={profile.url}>{prettyUrl(profile.url)}</a>
+											<a
+												href={profile.url}
+												className="text-blue-600 hover:text-blue-800"
+												rel="noopener noreferrer"
+											>
+												{prettyUrl(profile.url)}
+											</a>
 										</li>
 									);
 								})}
@@ -36,11 +42,11 @@ export function ResumeComponent({ resume }: { resume: Resume }) {
 			)}
 			{resume.work && resume.work.length > 0 && (
 				<section id="work">
-					<h2>Work Experience</h2>
-					{resume.work.map((work, idx) => {
+					<h2 className="text-2xl font-bold mt-8 mb-4">Work Experience</h2>
+					{resume.work.map((work, idx) => (
 						// biome-ignore lint: lint/suspicious/noArrayIndexKey
-						return <Work key={idx} work={work} />;
-					})}
+						<Work key={idx} work={work} />
+					))}
 				</section>
 			)}
 		</main>
@@ -49,21 +55,23 @@ export function ResumeComponent({ resume }: { resume: Resume }) {
 
 function Work({ work }: { work: NonNullable<Resume["work"]>[number] }) {
 	return (
-		<article className="Work" id={`work-${toSlug(work.name ?? "")}}`}>
+		<article className="mb-8" id={`work-${toSlug(work.name ?? "")}}`}>
 			<CompanyLink work={work}>
-				<h3>{work.name}</h3>
+				<h3 className="text-xl font-semibold">{work.name}</h3>
 			</CompanyLink>
-			<p>
-				<span className="Work__meta__position">{work.position}</span>{" "}
-				<span className="Work__meta__divider" aria-hidden="true">
+			<p className="my-2">
+				<span className="font-bold">{work.position}</span>{" "}
+				<span className="text-gray-300 mx-2" aria-hidden="true">
 					•
 				</span>{" "}
-				<span className="Work__meta__dates">
+				<span className="text-sm italic text-gray-600">
 					{format(parseISO(work.startDate), DATE_FORMAT)} -{" "}
-					{work.endDate || "Present"}
+					{work.endDate
+						? format(parseISO(work.endDate), DATE_FORMAT)
+						: "Present"}
 				</span>
 			</p>
-			<p>{work.summary}</p>
+			<p className="text-gray-700">{work.summary}</p>
 		</article>
 	);
 }
@@ -71,10 +79,17 @@ function Work({ work }: { work: NonNullable<Resume["work"]>[number] }) {
 function CompanyLink({
 	work,
 	children,
-}: { work: NonNullable<Resume["work"]>[number]; children: React.ReactNode }) {
+}: {
+	work: NonNullable<Resume["work"]>[number];
+	children: React.ReactNode;
+}) {
 	if (work.url) {
 		return (
-			<a href={work.url} rel="noopener noreferrer">
+			<a
+				href={work.url}
+				rel="noopener noreferrer"
+				className="text-blue-600 hover:text-blue-800"
+			>
 				{children}
 			</a>
 		);
