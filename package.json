@@ -1,35 +1,27 @@
 {
-	"name": "ascrazy.github.io",
-	"module": "index.ts",
-	"type": "module",
-	"devDependencies": {
-		"@biomejs/biome": "1.5.3",
-		"@types/bun": "latest",
-		"husky": "^9.0.10",
-		"lint-staged": "^15.2.2"
-	},
-	"peerDependencies": {
-		"typescript": "^5.0.0"
-	},
-	"dependencies": {
-		"@types/react": "^18.2.47",
-		"@types/react-dom": "^18.2.18",
-		"chokidar-cli": "^3.0.0",
-		"date-fns": "^3.2.0",
-		"five-server": "^0.3.2",
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
-		"resume-schema-zod": "^0.2.1"
-	},
-	"scripts": {
-		"export": "bun run ./src/scripts/export.ts",
-		"dev": "bun run ./src/scripts/dev.ts ",
-		"format-all": "bunx biome check --apply --no-errors-on-unmatched --files-ignore-unknown=true .",
-		"postinstall": "husky install"
-	},
-	"lint-staged": {
-		"*": [
-			"bunx biome check --no-errors-on-unmatched --files-ignore-unknown=true"
-		]
-	}
+  "name": "ascrazy.github.io",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@biomejs/biome": "1.5.3",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/react": "^18.2.47",
+    "@types/react-dom": "^18.2.18",
+    "chokidar-cli": "^3.0.0",
+    "date-fns": "^3.2.0",
+    "five-server": "^0.3.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "resume-schema-zod": "^0.2.1"
+  },
+  "scripts": {
+    "export": "bun run ./src/scripts/export.ts",
+    "dev": "bun run ./src/scripts/dev.ts ",
+    "format-all": "bunx biome check --apply --no-errors-on-unmatched --files-ignore-unknown=true ."
+  }
 }
