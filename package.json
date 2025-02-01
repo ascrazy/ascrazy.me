@@ -1,28 +1,32 @@
 {
-	"name": "ascrazy.github.io",
-	"module": "index.ts",
-	"type": "module",
-	"devDependencies": {
-		"@biomejs/biome": "1.5.3",
-		"@types/bun": "latest"
-	},
-	"peerDependencies": {
-		"typescript": "^5.0.0"
-	},
-	"dependencies": {
-		"@types/react": "^18.2.47",
-		"@types/react-dom": "^18.2.18",
-		"chokidar-cli": "^3.0.0",
-		"date-fns": "^3.2.0",
-		"five-server": "^0.3.2",
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
-		"resume-schema-zod": "^0.2.1"
-	},
-	"scripts": {
-		"export": "bun run ./src/scripts/export.ts",
-		"dev": "bun run ./src/scripts/dev.ts ",
-		"biome:format": "bunx biome check --apply .",
-		"biome:check": "bunx biome check ."
-	}
+  "name": "ascrazy.github.io",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@biomejs/biome": "1.5.3",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.0.3",
+    "@types/react": "^18.2.47",
+    "@types/react-dom": "^18.2.18",
+    "autoprefixer": "^10.4.20",
+    "chokidar-cli": "^3.0.0",
+    "date-fns": "^3.2.0",
+    "five-server": "^0.3.2",
+    "postcss": "^8.5.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "resume-schema-zod": "^0.2.1",
+    "tailwindcss": "^4.0.3"
+  },
+  "scripts": {
+    "export": "bun run ./src/scripts/export.ts",
+    "dev": "bun run ./src/scripts/dev.ts ",
+    "biome:format": "bunx biome check --apply .",
+    "biome:check": "bunx biome check ."
+  }
 }
