@@ -1,3 +1,10 @@
 {
-	"cSpell.words": ["ascrazy", "bunx", "devcontainer"]
+	"cSpell.words": ["ascrazy", "bunx", "devcontainer"],
+	"editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "biomejs.biome",
+  "editor.codeActionsOnSave": {
+    "quickfix.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
+  }
 }
