@@ -13,6 +13,6 @@
 		}
 	},
 	"files": {
-		"ignore": ["node_modules", "public", ".devcontainer/devcontainer.json"]
+		"ignore": ["node_modules", "dist", ".devcontainer/devcontainer.json"]
 	}
 }
