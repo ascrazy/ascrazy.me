@@ -7,7 +7,7 @@ const DATE_FORMAT = "LLL yyyy";
 
 export function ResumeComponent({ resume }: { resume: Resume }) {
 	return (
-		<main className="max-w-3xl pb-20">
+		<main className="max-w-3xl">
 			{resume.basics && (
 				<>
 					<h1 className="text-3xl font-bold mb-2">{resume.basics.name}</h1>

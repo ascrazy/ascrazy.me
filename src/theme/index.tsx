@@ -25,10 +25,8 @@ export default async function render(resume: Resume) {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<style>{css}</style>
 			</head>
-			<body className="p-4">
-				<div className="flex flex-col items-center">
-					<ResumeComponent resume={resume} />
-				</div>
+			<body className="px-4 pt-12 pb-20 flex flex-col items-center">
+				<ResumeComponent resume={resume} />
 			</body>
 		</html>,
 	);
