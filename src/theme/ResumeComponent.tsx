@@ -55,7 +55,7 @@ export function ResumeComponent({ resume }: { resume: Resume }) {
 
 function Work({ work }: { work: NonNullable<Resume["work"]>[number] }) {
 	return (
-		<article className="mb-8" id={`work-${toSlug(work.name ?? "")}}`}>
+		<article className="mb-8" id={`work-${toSlug(work.name ?? "")}`}>
 			<CompanyLink work={work}>
 				<h3 className="text-xl font-semibold">{work.name}</h3>
 			</CompanyLink>
