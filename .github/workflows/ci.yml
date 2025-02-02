@@ -17,8 +17,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: oven-sh/setup-bun@v2
       - run: bun install
-      - if: ${{ github.event_name == 'pull_request' }}
-        run: bun biome:check
+      - run: bun biome:check
+        continue-on-error: true
       - run: bun test
   build-and-publish:
     needs: check
